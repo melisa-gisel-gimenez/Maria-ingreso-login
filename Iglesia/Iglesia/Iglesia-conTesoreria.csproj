@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BF2DA2F8-203A-408C-8393-FF8CDA80ECF9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Iglesia</RootNamespace>
+    <AssemblyName>Iglesia</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcercaDe1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcercaDe1.designer.cs">
+      <DependentUpon>AcercaDe1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarEgresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarEgresos.Designer.cs">
+      <DependentUpon>AgregarEgresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarIngresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarIngresos.Designer.cs">
+      <DependentUpon>AgregarIngresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarPersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarPersonas.Designer.cs">
+      <DependentUpon>AgregarPersonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaMentores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaMentores.Designer.cs">
+      <DependentUpon>AltaMentores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaMinisterios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaMinisterios.Designer.cs">
+      <DependentUpon>AltaMinisterios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaUsuarios.Designer.cs">
+      <DependentUpon>AltaUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conexion.cs" />
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar_Egresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar_Egresos.Designer.cs">
+      <DependentUpon>Modificar_Egresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar_Ingresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar_Ingresos.Designer.cs">
+      <DependentUpon>Modificar_Ingresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paginaprincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paginaprincipal.designer.cs">
+      <DependentUpon>paginaprincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostulacionesRevisar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostulacionesRevisar.Designer.cs">
+      <DependentUpon>PostulacionesRevisar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InhabilitarPersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InhabilitarPersonas.Designer.cs">
+      <DependentUpon>InhabilitarPersonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarMentor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarMentor.Designer.cs">
+      <DependentUpon>ModificarMentor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsignarMentor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignarMentor.Designer.cs">
+      <DependentUpon>AsignarMentor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Iglesia Adm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iglesia Adm.Designer.cs">
+      <DependentUpon>Iglesia Adm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar_Personas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar_Personas.Designer.cs">
+      <DependentUpon>Modificar_Personas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostularADiscipulado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostularADiscipulado.Designer.cs">
+      <DependentUpon>PostularADiscipulado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PPmentor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PPmentor.designer.cs">
+      <DependentUpon>PPmentor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PPTesoreria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PPTesoreria.designer.cs">
+      <DependentUpon>PPTesoreria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroReunionesMentor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroReunionesMentor.Designer.cs">
+      <DependentUpon>RegistroReunionesMentor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AcercaDe1.resx">
+      <DependentUpon>AcercaDe1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarEgresos.resx">
+      <DependentUpon>AgregarEgresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarIngresos.resx">
+      <DependentUpon>AgregarIngresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarPersonas.resx">
+      <DependentUpon>AgregarPersonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaMentores.resx">
+      <DependentUpon>AltaMentores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaMinisterios.resx">
+      <DependentUpon>AltaMinisterios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaUsuarios.resx">
+      <DependentUpon>AltaUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InhabilitarPersonas.resx">
+      <DependentUpon>InhabilitarPersonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarMentor.resx">
+      <DependentUpon>ModificarMentor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignarMentor.resx">
+      <DependentUpon>AsignarMentor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iglesia Adm.resx">
+      <DependentUpon>Iglesia Adm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar_Egresos.resx">
+      <DependentUpon>Modificar_Egresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar_Ingresos.resx">
+      <DependentUpon>Modificar_Ingresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar_Personas.resx">
+      <DependentUpon>Modificar_Personas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paginaprincipal.resx">
+      <DependentUpon>paginaprincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostulacionesRevisar.resx">
+      <DependentUpon>PostulacionesRevisar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostularADiscipulado.resx">
+      <DependentUpon>PostularADiscipulado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PPmentor.resx">
+      <DependentUpon>PPmentor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PPTesoreria.resx">
+      <DependentUpon>PPTesoreria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegistroReunionesMentor.resx">
+      <DependentUpon>RegistroReunionesMentor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte.rdlc" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\9a3c57e9-594f-42dc-b745-e54fa9adebeb.png" />
+    <Content Include="Resources\ad509a0b-2b57-4de0-9ec8-599f1f1d66a0.png" />
+    <Content Include="Resources\Diseño sin título.png" />
+    <Content Include="Resources\logo.PNG" />
+    <Content Include="Resources\ojo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
